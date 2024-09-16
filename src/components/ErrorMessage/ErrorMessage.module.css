@@ -1,6 +1,11 @@
 .errorText {
-  color: rgb(255, 0, 0);
-  font-family: sans-serif;
-  font-size: 20px;
+  font-size: 16px;
+  color: #e74c3c;
+  background-color: #f8d7da;
+  border: 1px solid #e74c3c;
+  border-radius: 8px;
+  padding: 12px;
   text-align: center;
+  margin: 20px auto;
+  max-width: 400px;
 }

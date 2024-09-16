@@ -1,4 +1,4 @@
-import css from "./ImageCard.module.css";
+import css from './ImageCard.module.css';
 
 const ImageCard = ({ title, url, likes, openModal, setCurrentImage }) => {
   const handleClick = () => {
@@ -7,10 +7,11 @@ const ImageCard = ({ title, url, likes, openModal, setCurrentImage }) => {
   };
 
   return (
-    <div onClick={handleClick} className={css.wrapper}>
-      <img className={css.imageCard} src={url.small} alt={title} />
-      <div className={css.descriptionWrapper}>
-        <p>Likes: {likes}</p>
+    <div onClick={handleClick} className={css.card}>
+      <img className={css.image} src={url.small} alt={title} />
+      <div className={css.info}>
+        <p className={css.likes}>Likes: {likes}</p>
+        <p className={css.title}>{title}</p>
       </div>
     </div>
   );
